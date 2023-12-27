@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 import { Heading2, StyledLink, StyledList } from './TrendingList.styled';
 
-const TodayMoviesList = () => {
+const TrendingList = () => {
   const [movies, setMovies] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
   const location = useLocation();
@@ -41,4 +41,4 @@ const TodayMoviesList = () => {
   );
 };
 
-export default TodayMoviesList;
+export default TrendingList;

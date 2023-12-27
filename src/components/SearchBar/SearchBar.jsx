@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useSearchParams } from 'react-router-dom';
-import { FormStyled, Input } from './SearchBar.styled';
+import { Input } from './SearchBar.styled';
 
 const SearchBar = () => {
   const [searchMovie, setSearchMovie] = useState('');
@@ -17,7 +17,7 @@ const SearchBar = () => {
   }
   return (
     <>
-      <FormStyled onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit}>
         <Input
           type="text"
           name="search"
@@ -25,7 +25,7 @@ const SearchBar = () => {
           value={searchMovie}
           onChange={handleChange}
         />
-      </FormStyled>
+      </form>
     </>
   );
 };

@@ -1,10 +1,10 @@
-import TodayMoviesList from 'components/TrendingList/TodayMoviesList';
+import TrendingList from 'components/TrendingList/TrendingList';
 import React from 'react';
 
 const Home = () => {
   return (
     <>
-      <TodayMoviesList />
+      <TrendingList />
     </>
   );
 };

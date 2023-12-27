@@ -18,7 +18,7 @@ export const MovieInfo = styled.div`
   display: flex;
   flex-direction: column;
 `;
-export const TitleMovie = styled.h2`
+export const MovieTitle = styled.h2`
   margin-bottom: 20px;
   font-size: 28px;
   font-weight: 500;
@@ -29,7 +29,7 @@ export const Heading4 = styled.h4`
   font-size: 20px;
   font-weight: 500;
 `;
-export const Text = styled.h4`
+export const MovieText = styled.h4`
   margin-bottom: 5px;
   font-size: 15px;
   font-weight: 400;

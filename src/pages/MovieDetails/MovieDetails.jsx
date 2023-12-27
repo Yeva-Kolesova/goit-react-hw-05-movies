@@ -9,8 +9,8 @@ import {
   MovieInfo,
   MovieWrapper,
   NavStyledLink,
-  Text,
-  TitleMovie,
+  MovieText,
+  MovieTitle,
   WrapperLinks,
 } from 'pages/MovieDetails/MovieDetails.styled';
 import { StyledBtn } from 'components/uiComponents/Button/Button.styled';
@@ -52,12 +52,14 @@ const MovieDetails = () => {
               width="300"
             />
             <MovieInfo>
-              <TitleMovie>{movie.title}</TitleMovie>
-              <Text>User score - {movie.vote_average.toFixed(1)}/10</Text>
+              <MovieTitle>{movie.title}</MovieTitle>
+              <MovieText>
+                User score - {movie.vote_average.toFixed(1)}/10
+              </MovieText>
               <Heading4>Overview</Heading4>
-              <Text>{movie.overview}</Text>
+              <MovieText>{movie.overview}</MovieText>
               <Heading4>Genres</Heading4>
-              <Text>{movie.genres.map(el => el.name + ' ')}</Text>
+              <MovieText>{movie.genres.map(el => el.name + ' ')}</MovieText>
             </MovieInfo>
           </MovieDetailsInfo>
           <WrapperLinks>
