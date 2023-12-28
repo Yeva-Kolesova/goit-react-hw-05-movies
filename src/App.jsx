@@ -1,4 +1,4 @@
-import Layout from 'layout/Layout';
+import Layout from 'components/layout/Layout';
 import { Route, Routes } from 'react-router-dom';
 import { Suspense, lazy } from 'react';
 

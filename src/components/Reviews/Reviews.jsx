@@ -3,7 +3,7 @@ import { useParams } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState('');
+  const [reviews, setReviews] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
 
   const { movieId } = useParams();
